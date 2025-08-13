@@ -24,5 +24,8 @@ async def load_image(path: str) -> MCPImage:
     image.save(buffered, format="JPEG")
     return MCPImage(data=buffered.getvalue(), format="jpeg")
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == "__main__":
+    main()
